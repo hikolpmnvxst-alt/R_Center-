@@ -1,1 +1,204 @@
-# R_Center-
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terduk 100x Luxury</title>
+    <style>
+        :root {
+            --red: #ff0000;
+            --dark: #000000;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            background: #000;
+            font-family: 'SF Pro Display', -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* باکگراوەندی ئەنیمەیشن (ڕەنگی جووڵاو) */
+        .bg-animate {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 10% 20%, rgba(255, 0, 0, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(255, 0, 0, 0.15) 0%, transparent 40%);
+            z-index: -1;
+            filter: blur(50px);
+        }
+
+        .main-card {
+            width: 90%;
+            max-width: 400px;
+            height: 85vh;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+            padding: 40px 20px;
+        }
+
+        /* ناوی شەریکە - شیک و مۆدێرن */
+        .company-header {
+            background: var(--red);
+            padding: 12px 45px;
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* بازنەی لۆگۆ - ئاوتڵاینی سپی بریقەدار */
+        .logo-wrapper {
+            width: 140px;
+            height: 140px;
+            background: linear-gradient(145deg, #fff, #bbb);
+            border-radius: 50%;
+            padding: 6px; /* ئاوتڵاینە سپییەکە */
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            margin-bottom: 50px;
+        }
+
+        .logo-wrapper img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #000;
+        }
+
+        /* گرید بۆ دوگمەکان */
+        .grid-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 100%;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .icon-circle {
+            width: 75px;
+            height: 75px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .item:hover .icon-circle {
+            background: var(--red);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 0, 0, 0.4);
+        }
+
+        .icon-circle img {
+            width: 35px;
+            height: 35px;
+            filter: brightness(0) invert(1);
+        }
+
+        .label {
+            margin-top: 10px;
+            color: #ccc;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        /* دوگمەی ئیمێڵی شاهانە لە خوارەوە */
+        .email-btn {
+            margin-top: auto;
+            width: 100%;
+            background: white;
+            color: black;
+            padding: 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+
+        .email-btn:hover {
+            transform: scale(1.05);
+            background: var(--red);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bg-animate"></div>
+
+    <div class="main-card">
+        <div class="company-header">TERDUK</div>
+
+        <div class="logo-wrapper">
+            <img src="first products-01.jpg" alt="Logo">
+        </div>
+
+        <div class="grid-buttons">
+            <a href="#" class="item">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></div>
+                <span class="label">WhatsApp 1</span>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></div>
+                <span class="label">WhatsApp 2</span>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"></div>
+                <span class="label">Facebook</span>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></div>
+                <span class="label">Instagram</span>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"></div>
+                <span class="label">TikTok</span>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-circle" style="background: rgba(255, 252, 0, 0.1); border-color: #fffc0066;"><img src="https://cdn-icons-png.flaticon.com/512/196/196159.png" style="filter: none;"></div>
+                <span class="label">Snapchat</span>
+            </a>
+        </div>
+
+        <a href="mailto:info@terduk.com" class="email-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" width="22">
+            <span>SEND EMAIL</span>
+        </a>
+    </div>
+
+</body>
+</html>
